@@ -1,0 +1,102 @@
+html {
+    font-size: 50px;
+    background-color: black;
+}
+.bgfade {
+    animation-timing-function: ease-in;
+    animation-name: fadebg;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes fadebg {
+    0%   { opacity: 0;}
+    100% {opacity: 0.4;}
+}
+@keyframes fadetext {
+    0%   { opacity: 0;}
+    100% {opacity: 1;}
+}
+.fadetitle {
+    animation-timing-function:ease-in;
+    animation-name: fadetext;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    opacity: 0; 
+}
+.fadelinks {
+    animation-timing-function:ease-in;
+    animation-name: fadetext;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    opacity: 0; 
+}
+h1 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition-timing-function: ease-out;
+    text-shadow: 3px 3px 10px black;
+    letter-spacing: -2px;
+    font-size: 10vh;
+    color: white;
+    user-select: none;
+}
+h1:hover{
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    text-shadow: 0px 0px 20px white;
+}
+.background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    filter: brightness(70%);
+}
+.discord {
+    width: 4%;
+    position: absolute;
+    top: 58%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    transition: 0.3s;
+}
+.github {
+    width: 4%;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    transition: 0.3s;
+}
+.youtube {
+    width: 5%;
+    position: absolute;
+    top: 58%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    transition: 0.3s;
+}
+.discord:hover {
+    width: 5%;
+}
+.github:hover {
+    width: 5%;
+}
+.youtube:hover {
+    width: 6%;
+}
