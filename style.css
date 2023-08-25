@@ -1,14 +1,3 @@
-html {
-    font-size: 50px;
-    background-color: black;
-}
-.bgfade {
-    animation-timing-function: ease-in;
-    animation-name: fadebg;
-    animation-duration: 2.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
 @keyframes fadebg {
     0%   { opacity: 0;}
     100% {opacity: 0.4;}
@@ -16,6 +5,20 @@ html {
 @keyframes fadetext {
     0%   { opacity: 0;}
     100% {opacity: 1;}
+}
+
+
+html {
+    font-size: 50px;
+    background-color: black;
+}
+
+.bgfade {
+    animation-timing-function: ease-in;
+    animation-name: fadebg;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 .fadetitle {
     animation-timing-function:ease-in;
@@ -99,4 +102,68 @@ h1:hover{
 }
 .youtube:hover {
     width: 6%;
+}
+@media (max-width: 1200px) {
+    .discord {
+        width: 8%;
+        position: absolute;
+        top: 58%;
+        left: 40%;
+        transition: 0.3s;
+    }
+    .github {
+        width: 8%;
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transition: 0.3s;
+    }
+    .youtube {
+        width: 9%;
+        position: absolute;
+        top: 58%;
+        left: 60%;
+        transition: 0.3s;
+    }
+    .discord:hover {
+        width: 9%;
+    }
+    .github:hover {
+        width: 9%;
+    }
+    .youtube:hover {
+        width: 10%;
+    }
+}
+@media (max-width: 600px) {
+    .discord {
+        width: 15%;
+        position: absolute;
+        top: 58%;
+        left: 30%;
+        transition: 0.3s;
+    }
+    .github {
+        width: 15%;
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transition: 0.3s;
+    }
+    .youtube {
+        width: 17%;
+        position: absolute;
+        top: 58%;
+        left: 70%;
+        transition: 0.3s;
+    }
+    .discord:hover {
+        width: 17%;
+    }
+    .github:hover {
+        width: 17%;
+    }
+    .youtube:hover {
+        width: 19%;
+    }
 }
